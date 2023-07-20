@@ -8,8 +8,8 @@ const App = () => {
   return (
     <div>
         {/* Do not remove the main div */}
-        <h2>Sum Calculator</h2>
-        <input type="number" onChange={(e) => setSum(e.target.value + sum) } />
+        <h1>Sum Calculator</h1>
+        <input type="number" onChange={(e) => setSum(parseInt(e.target.value) + sum) } />
         <p>Sum: {sum}</p>
     </div>
   )
